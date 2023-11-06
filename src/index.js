@@ -7,6 +7,7 @@ import Error from "./components/Page/Error";
 import Home from "./components/Page/Home";
 import Contact from "./components/Page/Contact";
 import Header from "./components/Elements/Header";
+import Tables from "./components/Lists/Tables";
 import reportWebVitals from './reportWebVitals';
 
 //router configuration
@@ -19,6 +20,10 @@ const router = createBrowserRouter(
     {
       path: "/error",
       element: <Error/>,
+    },
+    {
+      path: "/tables",
+      element: <Tables/>,
     },
     {
       path: "/header",
