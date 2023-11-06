@@ -5,6 +5,8 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./components/Page/Error";
 import Home from "./components/Page/Home";
+import Contact from "./components/Page/Contact";
+import Header from "./components/Elements/Header";
 import reportWebVitals from './reportWebVitals';
 
 //router configuration
@@ -12,11 +14,19 @@ const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Home/>
+      element: <Home/>,
     },
     {
       path: "/error",
-      element: <Error/>
+      element: <Error/>,
+    },
+    {
+      path: "/header",
+      element: <Header/>
+    },
+    {
+      path: "/contact",
+      element: <Contact/>
     },
   ],
 );
