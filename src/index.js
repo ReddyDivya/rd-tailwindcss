@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Error from "./components/Page/Error";
-import Home from "./components/Page/Home";
-import Contact from "./components/Page/Contact";
-import Header from "./components/Elements/Header";
-import Tables from "./components/Lists/Tables";
+import Error from "./components/Error";
+import Home from "./components/Home";
 import reportWebVitals from './reportWebVitals';
 
 //router configuration
@@ -20,18 +17,6 @@ const router = createBrowserRouter(
     {
       path: "/error",
       element: <Error/>,
-    },
-    {
-      path: "/tables",
-      element: <Tables/>,
-    },
-    {
-      path: "/header",
-      element: <Header/>
-    },
-    {
-      path: "/contact",
-      element: <Contact/>
     },
   ],
 );
